@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { GalleryComponent } from './gallery/gallery.component';
   
 
 const appRoutes:Routes=[
   {
     path:"",component:HomeComponent
+  },
+  {
+    path:"gallery",component:GalleryComponent
   }
 ]
 
@@ -18,7 +22,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
